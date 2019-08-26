@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Livvic', sans-serif;
 }
 .head_wrap,
 .wrapper {
@@ -8,10 +9,10 @@
     text-align: center;
 }
 header,footer {
-    padding: 3rem 0;
+    padding: 2rem 0;
     color: white;
     background-image: linear-gradient(45deg,#ffafbd, #ffc3a0);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 main {
     background-color:#f7f7f5;
@@ -23,7 +24,7 @@ input {
     padding-left: 1rem;
     width: 50%;
     height:40px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 10px lightskyblue;
@@ -37,14 +38,19 @@ input {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-img {
+img[src*="thumbnails"] {
     width: 200px;
-    padding: 15px;
+    padding: 14px;
+    margin-bottom:2rem; ;
+    box-shadow: 0 0 5px gray;
 }
 
 footer {
     text-align: center;
 }
-.lightbox .lb-image {
- border: none;   
+@media (min-width:768px){
+    header,footer {
+        padding: 3rem 0;
+        font-size: 2rem;
+    }
 }
